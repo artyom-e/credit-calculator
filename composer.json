@@ -1,17 +1,30 @@
 {
     "name": "artyom-e/credit-calculator",
+    "description": "A simple PHP-based Credit Calculator that supports multiple types of loan payment calculations",
+    "keywords": [
+        "artyom-e",
+        "credit-calculator"
+    ],
+    "homepage": "https://github.com/artyom-e/credit-calculator",
+    "license": "MIT",
     "type": "library",
+    "authors": [
+        {
+            "name": "Artem Yeremenko",
+            "email": "a7776e@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "ArtyomE\\CreditCalculator\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Artem Yeremenko"
-        }
-    ],
     "require": {
+        "php": ">=8.3",
         "spatie/data-transfer-object": "^3.9"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
