@@ -1,0 +1,15 @@
+{
+    "name": "artyom-e/credit-calculator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ArtyomE\\CreditCalculator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Artem Yeremenko"
+        }
+    ],
+    "require": {}
+}
