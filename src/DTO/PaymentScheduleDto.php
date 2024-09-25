@@ -17,9 +17,6 @@ class PaymentScheduleDto extends DataTransferObject
     #[MapTo('total_amount_without_interest')]
     public float $totalAmountWithoutInterest;
 
-    #[MapTo('avg_monthly_payment')]
-    public float $avgMonthlyPayment;
-
     /** @var PaymentScheduleItemDto[] */
     #[CastWith(ArrayCaster::class, itemType: PaymentScheduleItemDto::class)]
     public array $schedule;
