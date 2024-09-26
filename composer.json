@@ -25,11 +25,13 @@
         "spatie/data-transfer-object": "^3.9"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.64",
         "phpstan/phpstan": "^1.12"
     },
     "scripts": {
         "analyse" : "vendor/bin/phpstan analyse",
-        "baseline": "vendor/bin/phpstan --generate-baseline"
+        "baseline": "vendor/bin/phpstan --generate-baseline",
+        "code-style": "./vendor/bin/php-cs-fixer fix src"
     },
     "config": {
         "sort-packages": true
