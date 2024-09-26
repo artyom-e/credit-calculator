@@ -7,4 +7,6 @@ enum CalculationType
     case differentiated;
 
     case annuity;
+
+    case bullet;
 }

@@ -1,13 +1,15 @@
 # PHP Credit Calculator Package
 
-A simple PHP-based Credit Calculator that supports two types of loan payment calculations:
+A simple PHP-based Credit Calculator that supports three types of loan payment calculations:
 - **Annuity Payments**
 - **Differentiated Payments**
+- **Bullet Payments**
 
 ## Features
 
 - **Annuity Calculation**: Fixed monthly payments throughout the loan period.
 - **Differentiated Calculation**: Payments decrease over time, starting with higher amounts.
+- **Bullet Calculation**: Payment method where the borrower only pays interest throughout the loan term, and the entire principal is paid in lump sum at the end of loan period.
 
 ## Requirements
 
@@ -82,7 +84,3 @@ $paymentSchedule = $resolver->resolve(6, 5000, 45);
    ]
 }
 ```
-
-## TODO
-
-- [ ] Add additional resolvers
