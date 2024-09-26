@@ -85,5 +85,4 @@ $paymentSchedule = $resolver->resolve(6, 5000, 45);
 
 ## TODO
 
-- [ ] Add tests
 - [ ] Add additional resolvers
