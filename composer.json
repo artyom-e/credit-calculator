@@ -26,14 +26,19 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.64",
+        "pestphp/pest": "^3.2",
         "phpstan/phpstan": "^1.12"
     },
     "scripts": {
         "analyse" : "vendor/bin/phpstan analyse",
         "baseline": "vendor/bin/phpstan --generate-baseline",
-        "code-style": "./vendor/bin/php-cs-fixer fix src"
+        "code-style": "./vendor/bin/php-cs-fixer fix src",
+        "test": "./vendor/bin/pest"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }
