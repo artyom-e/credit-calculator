@@ -3,9 +3,12 @@
     "description": "A simple PHP-based Credit Calculator that supports multiple types of loan payment calculations",
     "keywords": [
         "artyom-e",
-        "credit-calculator"
+        "credit-calculator",
+        "payment schedule",
+        "loan",
+        "credit"
     ],
-    "homepage": "https://github.com/artyom-e/credit-calculator",
+    "homepage": "https://github.com/artyom-e/credit-calculator-php",
     "license": "MIT",
     "type": "library",
     "authors": [
