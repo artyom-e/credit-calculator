@@ -13,7 +13,7 @@ A simple PHP-based Credit Calculator that supports three types of loan payment c
 
 ## Requirements
 
-- PHP 8.3 or higher
+- PHP 8.2 or higher
 
 ## Installation
 

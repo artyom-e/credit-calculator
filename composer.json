@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "php": ">=8.3",
+        "php": ">=8.2",
         "spatie/data-transfer-object": "^3.9"
     },
     "require-dev": {
