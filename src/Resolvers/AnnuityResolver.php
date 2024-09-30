@@ -22,7 +22,7 @@ class AnnuityResolver extends AbstractResolver
         $totalAmountWithoutPercent = 0;
 
         $schedule = [];
-        for ($month = 1; $month <= $term; $month++) {
+        for ($month = 1; $month <= $term; ++$month) {
             $interestPayment = $remainingPrincipal * $this->getMonthlyRate($yearlyPercentage);
             $principalPayment = $monthlyPayment - $interestPayment;
             $remainingPrincipal -= $principalPayment;
@@ -32,15 +32,15 @@ class AnnuityResolver extends AbstractResolver
             $schedule[] = new PaymentScheduleItemDto(
                 month: $month,
                 principalPayment: $this->prepareFloat($principalPayment),
-                interestPayment:  $this->prepareFloat($interestPayment),
-                totalPayment:  $this->prepareFloat($monthlyPayment),
+                interestPayment: $this->prepareFloat($interestPayment),
+                totalPayment: $this->prepareFloat($monthlyPayment),
                 remainingPrincipal: $remainingPrincipal > 0 ? $this->prepareFloat($remainingPrincipal) : 0,
             );
         }
 
         return new PaymentScheduleDto(
-            totalAmountWithInterest:  $this->prepareFloat($totalAmountWithPercent),
-            totalAmountWithoutInterest:  $this->prepareFloat($totalAmountWithoutPercent),
+            totalAmountWithInterest: $this->prepareFloat($totalAmountWithPercent),
+            totalAmountWithoutInterest: $this->prepareFloat($totalAmountWithoutPercent),
             schedule: $schedule
         );
     }

@@ -15,7 +15,7 @@ class BulletResolver extends AbstractResolver
         $schedule = [];
         $totalAmountWithInterest = $amount + $monthlyInterestPayment * $term;
         $remainingPrincipal = $totalAmountWithInterest;
-        for ($month = 1; $month <= $term; $month++) {
+        for ($month = 1; $month <= $term; ++$month) {
             if ($month === $term) {
                 $totalPayment = $amount + $monthlyInterestPayment;
                 $remainingPrincipal -= $totalPayment;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use ArtyomE\CreditCalculator\Enums\CalculationType;
 use ArtyomE\CreditCalculator\ResolverFactory;
 use ArtyomE\CreditCalculator\Resolvers\AnnuityResolver;

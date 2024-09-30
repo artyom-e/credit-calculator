@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace ArtyomE\CreditCalculator\DTO\Validators;
 
-use Attribute;
 use Spatie\DataTransferObject\Validation\ValidationResult;
 use Spatie\DataTransferObject\Validator;
 
-#[Attribute(Attribute::TARGET_PROPERTY | Attribute::IS_REPEATABLE)]
+#[\Attribute(\Attribute::TARGET_PROPERTY | \Attribute::IS_REPEATABLE)]
 class Min implements Validator
 {
     public function __construct(private int $min)
@@ -24,7 +23,7 @@ class Min implements Validator
             return $this->validateNumeric($value);
         }
 
-        return ValidationResult::invalid("Invalid variable type.");
+        return ValidationResult::invalid('Invalid variable type.');
     }
 
     private function validateNumeric(float|int $value): ValidationResult

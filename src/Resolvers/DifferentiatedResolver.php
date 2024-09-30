@@ -22,7 +22,7 @@ class DifferentiatedResolver extends AbstractResolver
         $totalAmountWithInterest = 0;
         $totalAmountWithoutInterest = 0;
 
-        for ($month = 1; $month <= $term; $month++) {
+        for ($month = 1; $month <= $term; ++$month) {
             $remainingPrincipal = $amount - ($monthlyPrincipalPayment * $month);
             $interestPayment = ($amount - ($monthlyPrincipalPayment * ($month - 1))) * $this->getMonthlyRate($yearlyPercentage);
             $totalPayment = $monthlyPrincipalPayment + $interestPayment;

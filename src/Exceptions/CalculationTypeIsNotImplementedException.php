@@ -1,9 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ArtyomE\CreditCalculator\Exceptions;
 
-use Exception;
-
-class CalculationTypeIsNotImplementedException extends Exception
+class CalculationTypeIsNotImplementedException extends \Exception
 {
 }

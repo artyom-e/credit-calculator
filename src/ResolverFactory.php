@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ArtyomE\CreditCalculator;
 
 use ArtyomE\CreditCalculator\Enums\CalculationType;
